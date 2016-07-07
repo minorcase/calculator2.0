@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="calc.css">
+    <title>Calculate Things!</title>
+    <script src="calc.js"></script>
+</head>
+<body>
+<div class='calc_container'>
+    <div class='top_container'>
+        <textarea class='top_display' disabled></textarea>
+    </div>
+    <div class='top_right_container'>
+        <div class="reset_button clear" onclick="clear_all()">Clear</div>
+    </div>
+    <div class='button_area'>
+        <button class='btn btn-primary' data-type='num'>7</button>
+        <button class='btn btn-primary'  data-type='num'>8</button>
+        <button class='btn btn-primary'  data-type='num'>9</button>
+        <button class='btn btn-info'  data-type='num'>4</button>
+        <button class='btn btn-info'  data-type='num'>5</button>
+        <button class='btn btn-info'  data-type='num'>6</button>
+        <button class='btn btn-success' data-type='num'>1</button>
+        <button class='btn btn-success'  data-type='num'>2</button>
+        <button class='btn btn-success'  data-type='num'>3</button>
+        <button class='btn btn-warning'  data-type='operator'>+</button>
+        <button class='btn btn-warning'  data-type='num'>0</button>
+        <button class='btn btn-warning'  data-type='operator'>-</button>
+        <button class='btn btn-danger'  data-type='operator'>/</button>
+        <button class='btn btn-danger' data-type='num'>.</button>
+        <button class='btn btn-danger' data-type='operator'>*</button>
+        <button class='btn btn-primary' id="equals" data-type='equals'>=</button>
+    </div>
+</div>
+</body>
+</html>

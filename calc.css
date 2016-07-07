@@ -1,0 +1,93 @@
+body{
+    background-image: url("gradient_background.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.calc_container{
+    left: 50%;
+    top: 10vh;
+    transform: translate(-50%);
+    position: relative;
+    height: 70vh;
+    width: 40vh;
+    min-width: 270px;
+    min-height: 440px;
+    padding: 10px;
+    background-color: grey;
+    border-radius: 10%;
+    border: 5px black solid;
+    display: inline-block;
+    transition: all 1s;
+}
+.top_container{
+    float: left;
+    display: block;
+    height: 20%;
+    width: 75%;
+    /*background-color: blue;*/
+}
+.top_display{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 2em;
+    text-align: right;
+}
+
+.top_right_container{
+    display: block;
+    float: right;
+    width: 25%;
+    position: relative;
+    height: 20%;
+    /*background-color: blue;*/
+    text-align: center;
+}
+.top_right_container p{
+    top: 50%;
+    transform: translateY(-50%);
+}
+.button_area{
+    top: 10px;
+    display: inline-block;
+    position: relative;
+    /*background-color: blue;*/
+    height: 80%;
+    width: 100%;
+    text-align: center;
+    /*top: 20%;*/
+}
+.button_area button {
+    display: inline-block;
+    height: 15%;
+    /*border: 1px black solid;*/
+    width: 30%;
+    font-size: 2em;
+    /*top: auto; background-color: dimgray;*/
+    margin: 2px;
+    border-radius: 30%;
+}
+#equals{
+    width: 90%;
+    border-radius: 0;
+}
+.button_area button:focus, button:active{
+    outline: none !important;
+}
+.reset_button{
+    position: relative;
+    /*top: 20%;*/
+    /*transform: translateY(-50%);*/
+    border-radius: 5%;
+    /*margin-top:10%;*/
+    height: 25%;
+    width: 80%;
+    text-align: center;
+    background-color: dimgray;
+    left: 20%;
+}
+textarea{
+    resize: none;
+}
